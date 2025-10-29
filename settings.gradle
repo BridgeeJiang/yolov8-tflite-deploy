@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // QNN SDK repository - commented out as it's not publicly accessible
+        // maven {
+        //     url "https://qpm.qualcomm.com/main/tools/details/qualcomm_neural_processing_sdk"
+        // }
+    }
+}
+
+rootProject.name = "YOLOv8-TFLite-Deploy"
+include ':app'
